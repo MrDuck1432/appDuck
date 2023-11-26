@@ -1,0 +1,17 @@
+<app-header titulo="Registro"></app-header>
+
+<ion-content class="ion-padding background2" [fullscreen]="true">
+  <div class="contenedor-formulario">
+    <form [formGroup]="formulario" novalidate (ngSubmit)="register()">
+      <ion-list class="around">
+        <ion-item >
+          <ion-input fill="solid" label="Correo electrónico" labelPlacement="floating" class="form-control" formControlName="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input fill="solid" label="Contraseña" labelPlacement="floating" class="form-control" formControlName="password" type="password"></ion-input>
+        </ion-item>
+        <ion-button expand="block"  class="text-size padding" type="submit" color="favorite">Regístrarse</ion-button>
+      </ion-list>
+    </form>
+  </div>
+</ion-content>

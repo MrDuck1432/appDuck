@@ -1,0 +1,23 @@
+<app-menu titulo="Home"></app-menu>
+<ion-toolbar>
+    <ion-searchbar placeholder="Buscar producto" animated (input)="searchCustomer($event)" (ionClear)="clearSearch()"></ion-searchbar>
+</ion-toolbar>
+<ion-content >
+    <ion-item  *ngFor="let product of searchUser" >
+        <ion-card color="noti2" class="around opacidad">
+            <img src={{product.image}} class="adaptar"/>
+            <ion-card-header >
+              <ion-card-title>{{product.name}}</ion-card-title>
+              <div>$
+                {{product.price}}
+              </div>
+            </ion-card-header>
+            <ion-card-content>
+                {{product.description}}
+            </ion-card-content>
+        </ion-card>
+    </ion-item>
+</ion-content>
+
+
+

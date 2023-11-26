@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar class="ion-text-center" color="favorite">
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding background" [fullscreen]="true" >
+  <div class="contenedor-formulario">
+    <form [formGroup]="form" novalidate (ngSubmit)="login()" >
+      <ion-list class="around">
+        <ion-item >
+          <ion-input fill="solid" label="Correo electrónico" labelPlacement="floating" class="form-control" formControlName="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input fill="solid" label="Contraseña" labelPlacement="floating" class="form-control" formControlName="password" type="password"></ion-input>
+        </ion-item>
+        <ion-button expand="block" class="text-size padding" type="submit" color="favorite" >Entrar</ion-button>
+        <ion-button *ngIf="areCredentialsStored" expand="block" (click)="autofillCredentials()" class="text-size padding" color="noti2">Usar huella</ion-button>
+  
+        <div class="ion-text-center" >
+          <ion-label>¿No tienes cuenta? <a routerLink="/register">Regístrate</a></ion-label>
+        </div>
+      </ion-list>
+    </form>
+  </div>
+</ion-content>
+

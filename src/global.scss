@@ -1,0 +1,101 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+/*
+* {
+    border:1px solid red;
+}
+
+.p{
+    border:1px solid blue;
+}
+/*lineas de testing elementos*/
+.text-size {
+    font-size: 15px;
+    text-transform: none;
+}
+
+.padding {
+    padding: 10px 10px 10px 10px;
+}
+
+.adaptar {
+    min-width: 251px;
+    min-height: 251px;
+  }
+
+ion-content {
+    --background: none;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Establece el alto al 100% del viewport height */
+    width: 100vw; /* Establece el ancho al 100% del viewport width */
+    background-size: cover; /* Cubre toda el área del contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-image: url("assets/background.png");
+  }
+
+  .around {
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Aquí se definen las esquinas redondeadas del contenedor */
+    opacity: 0.9; /* Transparencia al 90% */
+  }
+
+  .contenedor-formulario {
+    
+    
+    margin: 10vh auto; /* Margen superior e inferior del 25% del viewport height y centrado horizontalmente */
+  }
+  ion-title {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .background2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Establece el alto al 100% del viewport height */
+    width: 100vw; /* Establece el ancho al 100% del viewport width */
+    background-size: cover; /* Cubre toda el área del contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-image: url("assets/background2.jpg");
+  }
+
+  .opacidad {
+    opacity: 0.9; /* Transparencia al 90% */
+    &:hover {
+      background-color: #D9A404; /* Color de fondo al pasar el cursor */
+      color: #ffffff; /* Color de texto al pasar el cursor */
+    }
+  }
+
